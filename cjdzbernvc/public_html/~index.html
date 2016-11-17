@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MIS</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="brand" href="/" title="Matin Insurance Services"><img alt="Matin Insurance Services" src="assets/img/logo.png"/></a>
+        
+        <div class="header-contact">
+          <p>Free Quote online <em>or</em> call</p>
+          <p class="phone">877-611-4647</p>
+        </div>
+      </div>
+
+    </header>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>SR22 & Non Owner Operator Insurance As Low As <span class="text-muted">$12/month</span></h1>
+        <div class="row">
+        <div class="col-md-6">
+          <p>We offer the fastest and most affordable SR-22 Insurance in California. Our rates start as low as $12/month. Get an instant quote. Purchase. Print your certificate & reinstate your license the same day.</p>
+          <ul>
+            <li>Instant SR22 filling with the DMV</li>
+            <li>5 star Yelp Reviews</li>
+            <li>No Hidden fees</li>
+            <li>Print Your SR22 Certificate Instantly</li>
+          </ul>
+
+
+          <p class="call-now">Call Now to Speak to An Agent</p>
+          <p class="phone">877-611-4647</p>
+        </div>
+        <div class="col-md-6">
+        <div class="sendEmail">
+          <form class="form-horizontal">
+            <h2>Receive An Instant Quote</h3>
+            <div class="form-group">
+              <label for="inputFirstName" class="col-sm-3 control-label">First Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputFirstName" name="firstname" placeholder="First Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputLastName" class="col-sm-3 control-label">Last Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputLastName" name="lastname" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputZip" class="col-sm-3 control-label">ZIP / Postal code</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputZip" name="zip" placeholder="ZIP / Postal code">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPhone" class="col-sm-3 control-label">Phone</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="Phone"> 
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputBirthday" class="col-sm-3 control-label">Date of Birthday</label>
+              <div class="col-sm-9">
+                <!-- Month dropdown -->
+                <select name="month" class="form-control month" name="birthday_day">
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <!-- Day dropdown -->
+                <select name="day" class="form-control day" name="birthday_month">
+                  <script type="text/javascript">
+                    for(var i = 1; i < 32; i++){
+                    //for (var i = year; i >= 1990; i--) {
+                      if (i < 10 ) {
+                        document.write('<option value="'+i+'">0'+i+'</option>');
+                      } else {
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                      }  
+                    }
+                  </script>
+                    <!--
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    -->
+                </select>
+                <select name="year" class="form-control year" name="birthday_year">
+                  <script type="text/javascript">
+                    var currentDate = new Date();
+                    var year = currentDate.getFullYear();
+                    for(var i = 1990; i < year+1; i++){
+                    //for (var i = year; i >= 1990; i--) {
+                      document.write('<option value="'+i+'">'+i+'</option>');
+                    }
+                  </script>
+                </select>              
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail"></label>
+              <div class="col-sm-9">
+                  <input id="inputEmail" class="form-control" type="email" placeholder="Email"></input>
+              </div>
+            </div>  
+            <div class="form-group">
+              <div class="col-sm-3">
+                <img alt="We guarantee our rate" src="assets/img/100-guarantee.png"/>
+              </div>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> I need a non-owner policy
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-lg btn-get-free-quote">Get free quote</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- end .sendEmail -->
+        </div>
+        </div>
+      </div>
+    </div> <!-- end jumbotron -->
+
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="yelp-promo">
+              <img class="logo-yelp" alt="Yelp" src="assets/img/yelp-logo.png"/>
+              We are a <span class="text-muted">5 star</span> rated Insurance Agency on <span class="text-muted">Yelp.</span>
+            </div>
+            <img class="logo-yelp" alt="Yelp widget" src="assets/img/yelp-widget.png"/>
+          </div>
+          <div class="col-md-5">
+            <div class="sidebar">
+              <h3>SR-22s Are Also Associated With the Followings:</h3>
+              <ul>
+                <li>DUI or DWI or any serious moving violation like Reckless Driving</li>
+                <li>At-fault accidents while driving without insurance</li>
+                <li>Repeat traffic offenses or getting too many tickets in a short time period</li>
+                <li>License suspension or revoked license</li>
+              </ul>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copiright">2003-2015. MIS Insurance Services, LLC. All rights reserved.</p>
+        <div class="pull-right">
+          <img alt="Yelp 5 - star reviews" src="assets/img/yelp.png"/>
+          <img alt="Show Your Card & Save" src="assets/img/AAA-r.png"/>
+        </div> 
+      </div>  
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
+
+
+
+TERMS & CONDITIONS
+
+
+** Customer Service
+------------------------------------------------------------
+
+* Format of the contract 
+* Description and price of the goods 
+* Payment 
+* Delivery 
+* International Shipping 
+* Risk/Title 
+* Title for Business Customers 
+* Your right of cancellation 
+* Warranty
+* Limitation of Liability
+* Returns Policy 
+* Data Protection 
+* Privacy Policy 
+* Images 
+
+Format of the contract
+i.        These terms of sale apply to all goods supplied by XBMC Solutions LTD, whose registered office is at 160 London Road, Barking, IG11 8BB (the Supplier).
+
+ii.        No contract exists between you and the Supplier for the sale of any goods until the Supplier has received and accepted your order and the Supplier has received payment in full (in cleared funds). Once the Supplier does so, there is a binding legal contract between us.
+
+iii.        By way of clarification, an acknowledgement of your order will be sent to you via e-mail when you place your order, but acceptance of your offer to buy the goods will not take place until after your payment is taken and you receive your acceptance e-mail. It is at this point that a binding legal contract is created and any contract is subject to these Terms and Conditions.
+
+iv.        The contract is subject to your right of cancellation (see below).
+
+v.        The Supplier may change these terms of sale without notice to you in relation to future sales.
+
+vi.        To order goods through the DroidBOX website you must be at least 18 years of age. We will treat each order for goods as an offer by you to purchase the goods subject to these terms and conditions.
+
+vii.        DroidBOX gives no assurance as to the mutual compatibility of components sold on any single invoice. It is the responsibility of the buyer to ensure that the goods purchased are suitable for the purpose intended. Advice sought by the customer from the Company in this respect may be given but cannot be relied upon by the customer or guaranteed by the Company unless the Company has access to the working system and the ability to carry out a full inspection of any software or operating system.
+
+viii.        Except as may be implied by law where the buyer is dealing as a consumer, in event of any breach of these Conditions by the Company the remedies of the buyer shall be limited to damages which shall in no circumstances exceed the price of the goods and the Company shall under no circumstances be liable for any indirect, incidental or consequential damages.
+
+ix.        These terms and conditions are subject only to UK law.
+
+Description and price of the goods
+i.        The description and price of the goods you order will be as shown on the Supplier's website at the time you place your order.
+
+ii.        The goods are subject to availability. If on receipt of your order the goods you have ordered are not available in stock, the Supplier will inform you as soon as possible and refund or re-credit you for any sum that has been paid by you or debited from your credit card for the goods.
+
+iii.        Every effort is made to ensure that prices shown on the Supplier's website are accurate at the time you place your order. If an error is found, the Supplier will inform you as soon as possible and offer you the option of reconfirming your order at the correct price, or cancelling your order. If the Supplier does not receive an order confirmation within 14 days of informing you of the error, the order will be cancelled automatically. If you cancel the order, or if the order is cancelled automatically due to the expiry of the 14 day period, the Supplier will refund or re-credit you for any sum that has been paid by you or debited from your credit card for the goods.
+
+iv.        In addition to the price, you may be required to pay a delivery charge for the goods.
+
+Payment
+i.        Payment for the goods and delivery charges can be made by any method shown on the Supplier's website at the time you place your order. Payment shall be due before the delivery date, except where agreed otherwise by the Supplier and time for payment shall be a fundamental term of this agreement, breach of which shall entitle the Supplier to terminate the contract immediately.
+
+ii.        There will be no delivery until cleared funds are received , except in the case of supplies of goods provided on credit terms.
+
+iii.        Payments shall be made by you without any deduction whatsoever unless you have a valid court order requiring an amount equal to such deduction to be paid by the Supplier to you.
+
+iv.        Where the Supplier agrees to provide goods on credit terms, the standard payment terms shall be 30 days from the date of invoice. In the event that payment is not made by the due date the Supplier reserves the right to charge interest from the date of invoice at 8% per annum, compounded monthly.
+
+v.        The Company reserves the right to levy charges for any of the following services: Inspection of any piece of computer equipment and installation / replacement of either software or hardware - Use of credit / debit cards or rapid cheque clearance facilities, Diagnosis and testing of any problems encountered with any piece of hardware or software, Recovery of any hardware or software problems and backup of any data when requested by the customer.
+
+Delivery
+i.        The goods you order will be delivered to the address you give when you place your order, except that some deliveries are not made outside the United Kingdom.
+
+ii.        Orders placed before 3.00 pm on a working day will be processed that day and will be delivered as per the requested delivery option provided no additional security checks are required and all stock items are available. (A working day is any day other than weekends and bank or other public holidays.)
+
+iii.        If delivery cannot be made to your address for reasons under the Supplier's control the Supplier will inform you as soon as possible.
+
+iv.        If you deliberately fail to take delivery of the goods (otherwise than by reason of circumstances under control of the Supplier) then without prejudice to any other right or remedy available to the Supplier , the Supplier may:
+
+§  store the goods until actual delivery and charge you for reasonable costs (including insurance) of storage; or
+
+§  sell the goods at the best readily obtainable price and (after deducting all reasonable storage and selling expenses) account to you for any excess over the price you agreed to pay for the goods or charge you for any shortfall below the price you agreed to pay for the goods.
+
+v.        If you fail to take delivery because you have cancelled your contract under the Distance Selling Regulations the Supplier shall refund or re-credit you within 30 days for any sum that has been paid by you or debited from your credit card for the goods. On exercising your right to cancel you shall be required to return the goods to the Supplier. Should you fail to return the goods, the Supplier reserves the right to deduct any direct costs incurred by the Supplier in retrieving the goods as a result of such failure.
+
+vi.        The Company will not accept liability for goods lost in transit unless we are notified within 5 days from the expected delivery date. This will be the date advised on the Customers automated despatch note which is emailed to the Customer once the items have left our warehouse.
+
+vii.        Should you require the goods to be redirected to another address after the goods have been dispatched you may be required to pay an additional postage charge.
+
+viii.        Every effort will be made to deliver the goods as soon as possible after your order has been accepted. However, the Supplier will not be liable for any loss or damage suffered by you through reasonable or unavoidable delay in delivery. In this case, the Supplier will inform you as soon as possible.
+
+ix.        Upon receipt of your order you will be asked to sign for the goods received in good condition. If the package does not appear to be in good condition then please refuse the delivery. If you are unable to check the contents of your delivery at the point of delivery then please sign for the parcel as "UNCHECKED". Failure to do so may affect any warranty claims that you make thereafter.
+
+x.        Whilst every effort shall be made to keep any delivery date, time of delivery shall not be of the essence. The Company shall not be liable for any consequential loss incurred by the buyer or any other person or company arising directly or indirectly out of any failure to meet any estimated delivery date.
+
+xi.        Unless otherwise agreed the Company may deliver by instalments and in such case each instalment shall be treated as a separate contract and any delay, default or non-delivery in respect of any instalment by the Company shall not entitle the buyer to cancel the remainder of the Contract.
+
+xii.        Delivery charges are calculated by weight and number of packages being sent. There will also be additional delivery charges for offshore destinations such as Ireland.
+
+xiii.        Any refused deliveries will be returned to the supplier. Upon receipt of the goods with the supplier a refund will be issued minus 10% of the value of the order to cover administration costs.
+
+xiv.        We will do our best to deliver your order on next working day. However we can't be responsible for any delays caused by the shipper.
+
+xv.         In case your order were delayed, you maybe entitled for the compensation by the shipper please read:
+
+a) Parcel Force - Conditions of cariage (http://www.parcelforce.com/conditions-of-carriage#Liability%20for%20delay,%20loss%20or%20damage)
+
+b) Royal Mail General Terms & Conditions (http://www.royalmail.com/sites/default/files/Royal-Mail-General-Terms-and-Conditions-June-2014.pdf)
+
+International Shipping
+i.        We do ship internationa orders usind DHL Express delivery and Parcel Force Ireland
+
+ii.      DHL Terms and Conditions  (http://www.dhl.co.uk/en/express/shipping/shipping_advice/terms_conditions.html)
+
+iii.     Please check DHL Time Difinite Outbound Zoning (https://docs.google.com/uc?id=0B2I-KIYwAYBnTTllVTdDTFRyc1E&export=download) if you have questions regarding the delivery time
+
+iv.     Please check if your address is not within Remote Ares (http://raslist.dhl.com/jsp/first.jsp)  otherwise Remote Area Delivery surcharge (http://www.dhl.co.uk/en/express/shipping/shipping_advice/surcharges.html) will apply.
+
+Risk/Title
+i.        The goods are at your risk from the time of delivery.
+
+ii.        Ownership of the goods shall not pass to you until the Supplier has received in full (in cash or cleared funds) all sums due to it in respect of:
+
+1.     the goods, and
+
+2.     all other sums which are or which become due to the Supplier from you on any account.
+
+iii.        The Supplier shall be entitled to recover payment for the goods even though ownership of any of the goods has not passed from the Supplier.
+
+Title for Business Customers
+i.       If you are a business customer until ownership of the goods has passed to you, you must:
+
+1.     store the goods (at no cost to the Supplier) separately from all your other goods and goods of any third party in such a way that they remain readily identifiable as the Supplier's property;
+
+2.     not destroy, deface or obscure any identifying mark or packaging on or relating to the goods; maintain the goods in satisfactory condition and keep them insured on the Supplier's behalf for their full price against all risks to the reasonable satisfaction of the Supplier. On request you shall produce the policy of insurance to the Supplier; and
+
+3.     hold the proceeds of the insurance referred to in condition 6.1.2 on trust for the Supplier and not mix them with any other money, nor pay the proceeds into an overdrawn bank account.
+
+ii.        If you are a business customer your right to possession of the goods shall terminate immediately if:
+
+1.     you have a bankruptcy order made against you or make an arrangement or composition with your creditors, or otherwise take the benefit of any statutory provision for the time being in force for the relief of insolvent debtors, or (being a body corporate) convene a meeting of creditors (whether formal or informal), or enter into liquidation (whether voluntary or compulsory) except a solvent voluntary liquidation for the purpose only of reconstruction or amalgamation, or have a receiver and/or manager, administrator or administrative receiver appointed of its undertaking or any part thereof, or a resolution is passed or a petition presented to any court for your winding up or for the granting of an administration order in respect of you, or any proceedings are commenced relating to your insolvency or possible insolvency; or
+
+2.     you suffer or allow any execution, whether legal or equitable, to be levied on your property or obtained against you or you are unable to pay your debts within the meaning of section 123 of the Insolvency Act 1986 or you cease to trade; or
+
+3.     you encumber or in any way charge any of the goods.
+
+iii.   For the purposes of these Terms and Conditions, a Business Customer shall mean any body corporate, educational establishment, hospital, health authority, governmental or local governmental body or any other organisation to whom the distance selling regulations apply, or any other customer for whom a trade account has been granted.
+
+iv.   Business customers are exempt from returning items within 14 days under the distance selling act.
+
+v.   Trade customers are liable for all carriage costs.
+
+vi.  In the event that payment is not received within 28 days of the due date,
+
+a.   All monies owing to the Supplier shall become immediately payable to the Supplier irrespective of whether it would have been due under the previously agreed payment terms.
+b.   The Supplier shall be entitled to charge the Customer the sum of £50+VAT in respect of a debt collection administration fee.
+
+Your right of cancellation
+i.    Provided you are not a Business Customer, you have the right to cancel the contract at any time up to the end of 14 working days after you receive the goods (see below).
+
+ii.   To exercise your right of cancellation, you must give written notice to the Supplier by hand, post or via this page (http://www.hcscomputers.co.uk/component/smartformer/?Itemid=50)  , giving details of the goods ordered and (where appropriate) their delivery. Notification by phone is not sufficient.
+
+iii.  Except in the case of faulty or misdescribed goods, if you exercise your right of cancellation after the goods have been delivered to you, you will be responsible for returning the goods to the Supplier at your own cost. The goods must be returned to the address shown within the Returns on Line section of the website. You must take reasonable care to ensure the goods are not damaged in the meantime or in transit. In the case of faulty or misdescribed goods we shall, after receiving notification in accordance with clause 8.3 or 8.4, either collect the goods from you or ask you to return the goods yourself and possibly refund you the reasonable postage costs.
+
+iv. Once you have notified the Supplier that you are cancelling the contract, the Supplier will refund or re-credit you within 30 days for any sum that has been paid by you or debited from your credit card for the goods.
+
+v.  Except in the case of faulty or misdescribed goods, if you do not return the goods as required, the Supplier may charge you a sum not exceeding the direct costs of recovering the goods.
+
+vi.  You do not have the right to cancel the contract if the order is for computer software which has been unsealed by you, or for consumable goods which, by their nature, cannot be returned, save where a fault is discovered which could not have been discovered otherwise than by unsealing the goods. PC systems are built to customer specifications and the following cancellation charges apply:
+
+Stage
+Custom Build and built-to-order
+Paperwork Stage
+£10
+Component Items Picked
+£15
+Build has commenced
+£45
+Build has been completed
+£55
+
+vii.        Once you confirm your order as correct a standard cancellation fee will be at the expense of the customer.
+
+viii.        An order cancelled in transit will incur the standard cancellation fee plus additional transit costs at the expense of the customer.
+
+ix.        In the event of an order returned due to non-delivery, the transit costs will be at the expense of the customer
+
+Warranty
+i. All goods supplied by the Supplier are warranted free from defects for 12 months from the date of supply (unless otherwise stated). This warranty does not affect your statutory rights as a consumer.
+
+ii. his warranty does not apply to any defect in the goods arising from fair wear and tear, wilful damage, accident, negligence by you or any third party, use otherwise than as recommended by the Supplier, failure to follow the Supplier's instructions, or any alteration or repair carried out without the Supplier's approval.
+
+iii. If the goods supplied to you are damaged or any item missing/incomplete on delivery, you must notify the Supplier within 48 hours.
+
+iv. If the goods supplied to you develop a defect while under warranty or you have any other complaint about the goods, you should notify the Supplier as soon as possible, but in any event within 14 days of the date you discovered or ought to have discovered the damage, defect or complaint.
+
+v. If a product that was faulty at the time of sale is returned to the retailer, the buyer is legally entitled to:
+A full Refund, If this is within 14 days. After this time a replacement product or refun(to the value of the replacement) will be offered.
+
+vi. It is the responsibility of the buyer to return and collect goods to / from the Company's premises. (See definition for The Company).
+
+vii. Items purchased from the Bargain Basement or sold at a special price as end of line or for other reasons that prevent them from being sold as new are sold with a 30 day warranty only. These items may be second user, refurbished or discontinued stock. They may be missing drivers, manuals, cables and accessories. Packaging, if supplied, may not be in new condition. All items are tested working.
+
+viii. Any items which are returned under the warranty and are found to be in a working condition will be charged a testing fee of £10 or 10% of the value of the goods, whichever is the greater.
+
+Limitation of Liability
+i. Subject to 9.2 below, if you are a consumer the Supplier shall not be liable to you for any loss or damage in circumstances where:
+
+1. there is no breach of a legal duty owed to you by the Supplier or by its employees or agents;
+
+2. such loss or damage is not a reasonably foreseeable result of any such breach;
+
+3. any increase in loss or damage resulting from breach by you of any term of this contract.
+
+ii. Nothing in these conditions excludes or limits the liability of the Supplier for death or personal injury caused by the Supplier's negligence or fraudulent misrepresentation.
+
+iii. If you are a business customer the Supplier shall not be liable to you for any indirect or consequential loss or damage (whether for loss of profit, loss of business, depletion of goodwill or otherwise), costs, expenses or other claims for consequential compensation whatsoever (howsoever caused) which arise out of or in connection with this agreement.
+
+Returns Policy
+i. It is the responsibility of the buyer to return and collect goods to / from the Company's premises. (See definition for The Company).
+
+ii. The goods cannot be returned unless an RMA number has been requested and obtained from the Company and the package clearly marked on the outside with this identification.
+
+iii. It is the customer's responsibility to take reasonable care of the goods whilst in their possession. If this condition is not met the Company reserves the right to make a reasonable charge for restocking and resale at a price that is less than that charged for the goods if sold as new. This charge will vary according to the condition of the returned goods. This provision is designed to ensure that returned goods can be sold again as new.
+
+iv.  Computer Systems built to the customer's individual specifications are exempt from the right to cancel under the Distance Selling Regulations.
+
+v. If the buyer properly rejects any of the goods in accordance with the Distance Selling Regulations within 14 working days in writing, the buyer shall nonetheless be responsible for the return cost of the goods.
+
+vi. Non-faulty items returned to our premises complete in the original packaging together with manuals and software disks within 14 working days of purchase may obtain a refund. Goods must be sellable as new in order to qualify for a refund. All software must be unused and sealed within the original packaging. Outside of 14 working days, non faulty items will not be exchanged or a refund offered under any circumstances. Full refunds will not be considered if the goods are damaged in any way and seals broken invalidating any warranty.
+
+vii. DroidBOX gives no assurance as to the mutual compatibility of components sold on any single invoice. It is the responsibility of the buyer to ensure that the goods purchased are suitable for the purpose intended. Advice sought by the customer from the Company in this respect may be given but cannot be relied upon by the customer or guaranteed by the Company unless the Company has access to the working system and the ability to carry out a full inspection of any software or operating system.
+
+ix. Change of mind items will be charged at £5 to cover our shipping expenses.
+
+Data Protection
+The Supplier will take all reasonable precautions to keep the details of your order and payment secure but unless the Supplier is negligent, the Supplier will not be liable for unauthorised access to information supplied by you.
+
+Privacy Policy
+We do not store credit card details nor do we share customer details with any 3rd parties
+
+Images
+Product images are for illustrative purposes only and may differ from the actual product.
