@@ -14,6 +14,8 @@ if (!empty($_POST) &&
   if ( isset($_POST['phone']) ) $phone = htmlspecialchars($_POST['phone']);
   if ( isset($_POST['day']) && isset($_POST['month']) && isset($_POST['year']) ) $birthday = htmlspecialchars($_POST['day']) . ' ' .date("F", mktime(0, 0, 0,htmlspecialchars($_POST['month']), 10)) . ', ' .htmlspecialchars($_POST['year']);
   if ( isset($_POST['email']) ) $email = htmlspecialchars($_POST['email']);
+  $referer = htmlspecialchars($_POST['referer-text']);
+  $queryString = htmlspecialchars($_POST['query-text']);
 
   //$monthNum = 5;
   //$monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); 
@@ -58,12 +60,17 @@ if (!empty($_POST) &&
 //  $mail->addCC('Jackie@mis-insurance.com', 'Jackie');
 //  $mail->addCC('melissa@mis-insurance.com', 'Melissa');
   //$mail->addCC('john@mis-insurance.com', 'John');
+
   $mail->addCC('3108010921@mms.att.net', 'MMS');
+
   /* For Test
   $mail->addCC('bompok@gmail.com', 'Sergiy');
   $mail->addCC('yura@magecloud.net', 'Yura');
   $mail->addCC('alex@magecloud.net', 'Alex');
+  $mail->addCC('aleksdzyubinski@gmail.com', 'Aleks');
+  $mail->addCC('paul.ryazanov@gmail.com', 'Paul');
   */
+  
 //  $mail->addCC('yura@magecloud.net', 'Yura');
 //  $mail->addCC('paul.ryazanov@gmail.com', 'Paul');
 
@@ -78,6 +85,8 @@ if (!empty($_POST) &&
   ."<p>Phone: ".$phone."</p>"
   ."<p>Date of Birth: ".$birthday."</p>"
   ."<p>Email: ".$email."</p>"
+  ."<p>Referer: ".$referer."</p>"
+  ."<p>Query String: " .$queryString."</p>"
   ;
 
   if(isset($_POST['non-owner']) &&
@@ -132,7 +141,7 @@ if (!empty($_POST) &&
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KR3FML');</script>
 <!-- End Google Tag Manager -->
-    <header class="header">
+<header class="header">
       <div class="container">
         <a class="brand" href="/" title="Matin Insurance Services"><img alt="Matin Insurance Services" src="assets/img/logo.png"/></a>
         <div class="header-contact">
@@ -159,7 +168,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.goog
         <div class="col-md-6">
         <div class="sendEmail">
           <form class="form-horizontal" method="post"  action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-            <h2>Receive An Instant Quote</h3>
+            <h2>Receive An Instant Quote</h2>
+              <input type="text" class="form-control" name="referer-text" method="post"  value="<?php echo $_SERVER['HTTP_REFERER']?>" style="display: none">
+              <input type="text" class="form-control" name="query-text" method="post" value="<?php echo $_SERVER['QUERY_STRING']?>" style="display: none">
             <div class="form-group">
               <label for="inputFirstName" class="col-sm-3 control-label">First Name</label>
               <div class="col-sm-9">
